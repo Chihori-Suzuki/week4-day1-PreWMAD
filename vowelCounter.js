@@ -2,6 +2,16 @@
 
 const vowelCounter = function(data) {
   // Put your solution here
+  let vowels = ["a","e","i","o","u"]
+  let answer ="";
+  for (j in data){
+    for (i in vowels){
+      if(data[j] === vowels[i]){
+        answer += data[j];
+      }
+    }
+  }
+  return answer;
 };
 
 console.log(vowelCounter("orange"));

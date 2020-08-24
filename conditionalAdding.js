@@ -2,6 +2,21 @@
 
 const conditionalAdding = function(values, condition) {
   // Your code here
+  let val = 0;
+  if (condition === "even"){
+    for(i =0; i < values.length; i++){
+      if (values[i] % 2 === 0){
+        val += values[1];
+      }
+    }
+  }else if (condition === "odd"){
+    for(i =0; i < values.length; i++){
+      if (values[i] % 2 === 1){
+        val += values[1];
+      }
+    }
+  }
+  return val;
 };
 
 console.log(conditionalAdding([1, 2, 3, 4, 5], "even"));
