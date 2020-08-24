@@ -7,10 +7,10 @@ const LongestName = function(instructors) {
   let longest = 0;
   for(i = 0; i < instructors.length; i++){
     
-    name = instructors[i].first.length + instructors[i].last.length;
+    nameLen = instructors[i].first.length + instructors[i].last.length;
     
-    if (name > longest){
-      longest = name;
+    if (nameLen > longest){
+      longest = nameLen;
       answer = instructors[i].first + " " + instructors[i].last;
     } 
   }
