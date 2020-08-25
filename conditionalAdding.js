@@ -11,7 +11,7 @@ const conditionalAdding = function(values, condition) {
     }
   }else if (condition === "odd"){
     for(i =0; i < values.length; i++){
-      if (values[i] % 2 === 1){
+      if (values[i] % 2 !== 0){
         val += values[i];
       }
     }
