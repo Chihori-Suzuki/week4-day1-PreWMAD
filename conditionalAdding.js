@@ -6,13 +6,13 @@ const conditionalAdding = function(values, condition) {
   if (condition === "even"){
     for(i =0; i < values.length; i++){
       if (values[i] % 2 === 0){
-        val += values[1];
+        val += values[i];
       }
     }
   }else if (condition === "odd"){
     for(i =0; i < values.length; i++){
       if (values[i] % 2 === 1){
-        val += values[1];
+        val += values[i];
       }
     }
   }
